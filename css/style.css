@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Work+Sans:wght@100;400;600;700&display=swap');
 :root {
     --Light-red: hsl(0, 100%, 67%);
     --Orangey-yellow: hsl(39, 100%, 56%);
     --Green-teal: hsl(166, 100%, 37%);
     --Cobalt-blue: hsl(234, 85%, 45%);
+    /* Gradients */
     --Light-slate-blue: hsl(252, 100%, 67%);
     --Light-royal-blue: hsl(241, 81%, 54%);
+
     --Violet-blue: hsla(256, 72%, 46%, 1);
     --Persian-blue: hsla(241, 72%, 46%, 0);
+    /* Neutral */
     --White: hsl(0, 0%, 100%);
     --Pale-blue: hsl(221, 100%, 96%);
     --Light-lavender: hsl(241, 100%, 89%);
@@ -15,5 +19,80 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
+body {
+    background-color: var(--White);
+    min-width:360px;
+    max-width:375px;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+    border-radius: 0 0 3.6rem 3.6rem;
+}
+
+.header__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--Light-lavender);
+    margin-top: 1.8rem;
+    margin-bottom: 1.6rem;
+}
+
+.header__score-container {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: linear-gradient(var(--Violet-blue), var(--Persian-blue));
+    margin-bottom: 2.4rem;
+    margin-top: 0.8rem;
+
+}
+
+.score-container__score{
+    font-size: 5.4rem;
+    font-weight: 800;
+    color: var(--White);
+    text-align: center;
+    margin-top: 2.4rem;
+}
+
+.score-container__of-hundred{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--Light-lavender);
+    text-align: center;
+    opacity: .4;
+    /* margin-top: 0.6rem; */
+}
+
+.header__summary-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.summary-container__title {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--White);
+    margin-bottom: 1.2rem;
+}
+
+.summary-container__paragraph {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--Light-lavender);
+    margin: 0 6ch;
+    text-align: center;
+    margin-bottom: 4.2rem;
+}
