@@ -13,65 +13,79 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <h1 class="header__title">Your Result</h1>
-      <div class="header__score-container">
-        <p class="score-container__score">76</p>
-        <small class="score-container__of-hundred">
-          of 100
-        </small>
-      </div>
-      <div class="header__summary-container">
-        <h2 class="summary-container__title">Great</h2>
-        <p class="summary-container__paragraph">
-          You scored higher than 65% of the people who have taken these tests.
-        </p>
-      </div>
-    </header>
-    <main class="main">
-      <h2 class="main__title">Summary</h2>
-      <ul class="main__list">
-        <li class="list__item">
-            <article class="item__container">
-                <span class="container__icon"></span>
-                <p class="container__text">Reaction</p>
-                <p class="container__score-item">
-                    <span>80 </span>
-                    / 100
-                </p>
-            </article>
-        </li>
-        <li class="list__item">
-            <article class="item__container">
-                <span class="container__icon"></span>
-                <p class="container__text">Memory</p>
-                <p class="container__score-item">
-                    <span>92</span>
-                    / 100
-                </p>
-            </article>
-        </li>
-        <li class="list__item">
-            <article class="item__container">
-                <span class="container__icon"></span>
-                <p class="container__text">Verbal</p>
-                <p class="container__score-item">
-                    <span>61</span>
-                    / 100
-                </p>
-            </article>
-        </li>
-        <li class="list__item">
-            <article class="item__container">
-                <span class="container__icon"></span>
-                <p class="container__text">Visual</p>
-                <p class="container__score-item">
-                    <span>72</span>
-                    / 100
-                </p>
-            </article>
-        </li>
-      </ul>
-    </main>
+    <section class="card">
+      <header class="header">
+        <h1 class="header__title">Your Result</h1>
+        <div class="header__score-container">
+          <p class="score-container__score">76</p>
+          <small class="score-container__of-hundred"> of 100 </small>
+        </div>
+        <div class="header__summary-container">
+          <h2 class="summary-container__title">Great</h2>
+          <p class="summary-container__paragraph">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </header>
+
+      <main class="main">
+        <h2 class="main__title">Summary</h2>
+        <ul class="main__list">
+          <!-- item 1 -->
+          <li class="list__item list__item--reaction">
+            <img
+              src="./assets/images/icon-reaction.svg"
+              alt="Icon reaction"
+              class="item__icon"
+            />
+            <p class="item__text item__text--reaction">Reaction</p>
+            <p class="item__score-item">
+              <strong>80 </strong>
+              <span>/ 100</span>
+            </p>
+          </li>
+          <!-- item 2 -->
+          <li class="list__item list__item--memory">
+            <img
+              src="./assets/images/icon-memory.svg"
+              alt="Icon memory"
+              class="item__icon"
+            />
+            <p class="item__text item__text--memory">Memory</p>
+            <p class="item__score-item">
+              <strong>92</strong>
+              <span>/ 100</span>
+            </p>
+          </li>
+          <!-- item 3 -->
+          <li class="list__item list__item--verbal">
+            <img
+              src="./assets/images/icon-verbal.svg"
+              alt="Icon verbal"
+              class="item__icon"
+            />
+            <p class="item__text item__text--verbal">Verbal</p>
+            <p class="item__score-item">
+              <strong>61</strong>
+              <span>/ 100</span>
+            </p>
+          </li>
+          <!-- item 4 -->
+          <li class="list__item list__item--visual">
+            <img
+              src="./assets/images/icon-visual.svg"
+              alt="Icon Visual"
+              class="item__icon"
+            />
+            <p class="item__text item__text--visual">Visual</p>
+            <p class="item__score-item">
+              <strong>72</strong>
+              <span>/ 100</span>
+            </p>
+          </li>
+        </ul>
+        <a href="#" class="main__button-continue">Continue</a>
+      </main>
+    </section>
   </body>
 </html>
