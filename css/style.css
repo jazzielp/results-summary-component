@@ -120,19 +120,19 @@ body {
     border-radius: 0.6rem;
 }
 
-.list__item--reaction {
+.list__item--Reaction {
     background-color: hsla(var(--Light-red), 0.06);
 }
 
-.list__item--memory {
+.list__item--Memory {
     background-color: hsla(var(--Orangey-yellow), 0.06);
 }
 
-.list__item--verbal {
+.list__item--Verbal {
     background-color: hsla(var(--Green-teal), 0.06);
 }
 
-.list__item--visual {
+.list__item--Visual {
     background-color: hsla(var(--Cobalt-blue), 0.06);
 }
 
@@ -152,19 +152,19 @@ body {
     font-weight: 600;
 }
 
-.item__text--reaction {
+.item__text--Reaction {
     color: hsl(var(--Light-red));
 }
 
-.item__text--memory {
+.item__text--Memory {
     color: hsl(var(--Orangey-yellow));
 }
 
-.item__text--verbal {
+.item__text--Verbal {
     color: hsl(var(--Green-teal));
 }
 
-.item__text--visual {
+.item__text--Visual {
     color: hsl(var(--Cobalt-blue));
 }
 
